@@ -1,0 +1,22 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start-client": "cd client && npm run dev",
+    "start-server": "cd server && node index.js",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "i18next": "^25.0.2",
+    "i18next-browser-languagedetector": "^8.1.0",
+    "react-i18next": "^15.5.1"
+  }
+}
